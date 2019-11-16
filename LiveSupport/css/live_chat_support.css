@@ -1,0 +1,43 @@
+#container{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:400px;
+}
+#subHeader {
+    font-size:1.0em;
+}
+#sendMessageArea{
+    font-size:1.3em;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    width:100%;
+}
+#sendMessageText{
+    text-align:left;
+    width:100%;
+    font-size:1.4em;
+    height:30px;
+    overflow:hidden;
+}
+#sendMessageName{
+    text-align:left;
+    font-size:1.4em;
+    height:30px;
+    overflow:hidden;
+    width:70%;
+}
+#otherClients{
+    text-align:right;
+}
+#conversation {
+    font-size:1.2em;
+    text-align:left;
+    width:100%;
+    height:150px;
+    border:solid 1px gray;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}

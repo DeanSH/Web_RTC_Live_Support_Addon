@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>Live Chat Support</title>
+        <!-- Assumes local locations for socket.io.js and easyrtc.js -->
+        <script src="easyrtc/socket.io-client/socket.io.js"></script>
+        <script type="text/javascript" src="easyrtc/api/easyrtc.js"></script>
+        <script type="text/javascript" src="js/live_chat_support_admin.js"></script>
+        <!-- Styles used -->
+        <link rel="stylesheet" type="text/css" href="css/live_chat_support_admin.css">
+    </head>
+    <body onload="connect()">
+        <div id="container">
+            <div id="main">
+                <!-- Main Content -->
+                <div id="header">
+                    <h1>Admin Live Chat Support</h1>
+                    <p id="subHeader">Connect with guests and respond to their questions.</p>
+                </div>
+                <hr />
+                <div id="sendMessageArea">
+                    Nickname: Admin<br>
+                    Live Chat:
+                    <div id="conversation"></div>
+                    <br>
+                    <textarea id="sendMessageText"></textarea>
+                    <div id="otherClients"></div>
+                    <br>
+                    <div id="connectionCount">Connections: 0</div>
+                    <br>
+                    <div id="iam">Connecting...</div>
+                </div>
+                <hr />
+                <!-- End Main Content -->
+            </div>
+
+        </div>
+    </body>
+</html>

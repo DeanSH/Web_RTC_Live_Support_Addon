@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Live Chat Support</title>
+        <!-- Assumes local locations for socket.io.js and easyrtc.js -->
+        <script src="easyrtc/socket.io-client/socket.io.js"></script>
+        <script type="text/javascript" src="easyrtc/api/easyrtc.js"></script>
+        <script type="text/javascript" src="js/live_chat_support.js"></script>
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="css/live_chat_support.css">
+    </head>
+    <body onload="connect()">
+        <div id="container">
+            <!-- Main Content -->
+            <div id="header">
+                <h1>Live Chat Support</h1>
+                <p id="subHeader">Connect with one of our Team and get live support now.</p>
+            </div>
+            <hr />
+            <div id="sendMessageArea">
+                Nickname: <input type="text" id="sendMessageName"></input>
+                <br>
+                Live Chat:
+                <div id="conversation"></div>
+                <br>
+                <input type="text" id="sendMessageText"></input>
+                <div id="otherClients"></div>
+                <br>
+                <div id="iam">Connecting...</div>
+            </div>
+            <hr />
+            <!-- End Main Content -->
+        </div>
+    </body>
+</html>
